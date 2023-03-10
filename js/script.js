@@ -12,6 +12,10 @@ modalX.addEventListener("click", function () {
   button.innerText = "Who's got this?";
 });
 
+modalX.addEventListener("click", function() {
+  closeModal();
+});
+
 document.addEventListener("keydown", function (e) {
   //console.log(e.key);
   if (e.key === "Escape") {
@@ -20,3 +24,4 @@ document.addEventListener("keydown", function (e) {
     }
   }
 });
+
