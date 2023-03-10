@@ -11,3 +11,12 @@ modalX.addEventListener("click", function () {
   modal.classList.remove("show-modal");
   button.innerText = "Who's got this?";
 });
+
+document.addEventListener("keydown", function (e) {
+  //console.log(e.key);
+  if (e.key === "Escape") {
+    if (modal.classList.contains("show-modal")) {
+      closeModal();
+    }
+  }
+});
